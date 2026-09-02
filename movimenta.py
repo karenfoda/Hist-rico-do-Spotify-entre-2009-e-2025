@@ -19,14 +19,7 @@ st.title("Histórico do Spotify entre 2009 e 2025")
 st.write("Realizado por: Karen Farias Menezes, Mariana Marchiori e Luiza Silva Romeiro.\n",
  "\nEste projeto analisa o histórico musical do Spotify entre 2009 e 2025, utilizando uma base com 8.582 registros de músicas. O objetivo é identificar os principais artistas, gêneros e características das músicas presentes nesse período.")
  
-arquivo = st.file_uploader(
-
-    "Envie um arquivo CSV",
-
-    type=["csv"]
-
-)
- 
+arquivo = "spotify_data clean.csv"
 if arquivo is not None:
 
     df = pd.read_csv(arquivo)
